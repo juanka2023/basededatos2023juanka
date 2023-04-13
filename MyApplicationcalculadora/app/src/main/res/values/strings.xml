@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Applicationcalculadora</string>
+    <string name="txtnumero1"></string>
+    <string name="txtnumero2"></string>
+    <string name="txtsignoresultado"></string>
+    <string name="txtresultado"></string>
+    
+</resources>

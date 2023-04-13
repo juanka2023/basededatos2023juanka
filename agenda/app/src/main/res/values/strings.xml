@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">agenda</string>
+    <string name="nombreapellido">ingrese nombre y apellido</string>
+    <string name="direcccion">ingrese su direccion</string>
+    <string name="telefono">ingrese su telefono</string>
+    <string name="botonguardar">guardar</string>
+</resources>

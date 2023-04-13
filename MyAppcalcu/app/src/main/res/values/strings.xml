@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyAppcalcu</string>
+    <string name="txtnumn1">ingresa el primer valor</string>
+    <string name="txtnumn2">ingresa el segundo valor</string>
+    <string name="buttonResta">resta</string>
+    <string name="buttonSuma">suma</string>
+    <string name="buttonString">calcular</string>
+    <string name="TextViewresultado"></string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">apknombre</string>
+    <string name="et1">introduce tu nombre</string>
+    <string name="et2">nombres</string>
+    <string name="botonenviar">enviar</string>
+    <string name="botonvolver">volver</string>
+</resources>

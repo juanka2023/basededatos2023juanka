@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">webview</string>
+    <string name="et1">ingresa el sitio web</string>
+    <string name="botonir">ir al sitio</string>
+    <string name="botonvolver">volver</string>
+</resources>

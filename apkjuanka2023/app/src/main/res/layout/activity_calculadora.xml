@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#75FFFFFC"
+    tools:context=".calculadora">
+
+    <EditText
+        android:id="@+id/tn1"
+        android:layout_width="353dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="@string/txt_valor1"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/tn2"
+        android:layout_width="345dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="@string/txt_valor2"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tn1" />
+
+    <Button
+        android:id="@+id/btvolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calculadora"
+        android:text="@string/volver"
+        app:layout_constraintBottom_toTopOf="@+id/tn1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="308dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="60dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btmul"
+        tools:text="@string/tv_resultado" />
+
+    <Button
+        android:id="@+id/btsuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:onClick="suma"
+        android:text="@string/ck_suma"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tn2" />
+
+    <Button
+        android:id="@+id/btresta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:onClick="resta"
+        android:text="@string/ck_resta"
+        app:layout_constraintStart_toEndOf="@+id/btsuma"
+        app:layout_constraintTop_toBottomOf="@+id/tn2" />
+
+    <Button
+        android:id="@+id/btmul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="56dp"
+        android:onClick="multipicar"
+        android:text="@string/ck_multiplicacion"
+        app:layout_constraintEnd_toStartOf="@+id/btdivi"
+        app:layout_constraintTop_toBottomOf="@+id/tn2" />
+
+    <Button
+        android:id="@+id/btdivi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="dividir"
+        android:text="@string/ck_dividir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tn2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

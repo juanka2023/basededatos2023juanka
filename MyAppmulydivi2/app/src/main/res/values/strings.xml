@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Appmulydivi</string>
+    <string name="txtnum1">introduzca un valor</string>
+    <string name="txtnum2">introduzca el sigiente valor</string>
+    <string name="rd_mul">multiplicar</string>
+    <string name="rd_divis">division</string>
+    <string name="buttonString">calcular</string>
+    <string name="tvresultado">resultado</string>
+
+</resources>

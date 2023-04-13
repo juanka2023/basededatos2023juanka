@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Resumen</string>
+    <string name="btn_web">Ir a Web</string>
+    <string name="btn_calculadora">Ir a Calculadora</string>
+    <string name="btn_formulario">Ir a Formulario</string>
+    <string name="et_valor1">Primer Valor</string>
+    <string name="et_valor2">Segundo Valor</string>
+    <string name="tv_resultado">Resultado</string>
+
+    <!-- FORMULARIO -->
+    <string name="et_nombre">Nombre: </string>
+    <string name="et_apellidos">Apellidos: </string>
+    <string name="et_direccion">Dirección: </string>
+    <string name="et_telefono">Teléfono: </string>
+    <string name="et_email">email: </string>
+    <string name="et_password">Contraseña: </string>
+
+    <string name="btn_enviar">Enviar Formulario</string>
+
+
+
+</resources>

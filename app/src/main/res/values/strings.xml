@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">basededatos2023juanka</string>
+    <string name="txt_isbn">Código del isbn</string>
+    <string name="txt_titulo">titulo libro</string>
+    <string name="txt_año">año</string>
+    <string name="txt_editorial">editorial</string>
+    <string name="btn_Registrar">Registrar producto</string>
+    <string name="btn_Buscar">Buscar producto</string>
+    <string name="btn_Eliminar">Eliminar producto</string>
+    <string name="btn_Modificar">Modificar producto</string>
+    <string name="btn_Limpiar">Limpiar datos</string>
+</resources>

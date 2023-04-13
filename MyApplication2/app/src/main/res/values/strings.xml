@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="imagen1">"hola</string>
+    <string name="imagen2">"hola2</string>
+    <string name="imagen3">"hola3</string>
+    <string name="imagen4">"hola4</string>
+</resources>

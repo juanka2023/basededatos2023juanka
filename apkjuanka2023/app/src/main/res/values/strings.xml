@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">apkjuanka2023</string>
+    <string name="txt_valor1">dime un numero</string>
+    <string name="txt_valor2">dime otro numero</string>
+    <string name="ck_multiplicacion">multiplicar</string>
+    <string name="ck_dividir">dividir</string>
+    <string name="btn_calcular">calcular</string>
+    <string name="tv_resultado">resultado</string>
+    <string name="ck_suma">suma</string>
+    <string name="ck_resta">resta</string>
+    <string name="calculadora">calculadora</string>
+    <string name="volver">volver</string>
+    <string name="botonformulario">formulario</string>
+    <string name="et_nombre">nombre</string>
+    <string name="et_apellido">apellido</string>
+    <string name="et_contraseña">contraseña</string>
+    <string name="et_telefono">telefono</string>
+    <string name="et_direccion">direccion</string>
+    <string name="boton_web">ir a web</string>
+    <string name="et_email">correo</string>
+    <string name="enviarfomulario">enviar</string>
+</resources>
+
+
+
+
+
+

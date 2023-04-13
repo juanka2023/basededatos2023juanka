@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alwaysDrawnWithCache="false"
+    android:background="#FFFAFA"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/txtNumero1"
+        android:layout_width="306dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="introduce un numero"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumero2"
+        android:layout_width="294dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="introduce otro numero"
+        android:inputType="number"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero1" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="127dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="56dp"
+        android:onClick="suma"
+        android:text="suma"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumero2" />
+
+    <TextView
+        android:id="@+id/textvewresultado"
+        android:layout_width="142dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

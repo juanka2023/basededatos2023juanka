@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">cal 4</string>
+    <string name="txt_valor1">dime un numero</string>
+    <string name="txt_valor2">dime otro numero</string>
+    <string name="ck_multiplicacion">multiplicar</string>
+    <string name="ck_dividir">dividir</string>
+    <string name="btn_calcular">calcular</string>
+    <string name="tv_resultado">resultado</string>
+    <string name="ck_suma">suma</string>
+    <string name="ck_resta">resta</string>
+</resources>

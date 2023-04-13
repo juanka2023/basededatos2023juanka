@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ejem 5 android</string>
+    <string name="txt_valor1">primer valor</string>
+    <string name="txt_valor2">segundo valor</string>
+    <string name="button">calcular</string>
+    <string name="txtresultado">resultado</string>
+</resources>

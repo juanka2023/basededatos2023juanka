@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">sharedpreferencia</string>
+    <string name="et1">ingrese su email</string>
+    <string name="boton_guaradr">guardar</string>
+</resources>
