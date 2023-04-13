@@ -12,14 +12,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    private EditText txtitulo, txtisbn, txtaño, txteditorial, ;
+    private EditText txtitulo, txtisbn, txteditorial;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        txtaño = (EditText) findViewById(R.id.txtaño);
         txteditorial = (EditText) findViewById(R.id.txteditorial);
         txtisbn = (EditText) findViewById(R.id.txtisbn);
         txtitulo = (EditText) findViewById(R.id.txtitulo);
@@ -33,16 +32,14 @@ public class MainActivity extends AppCompatActivity {
 
         String titulo = txtitulo.getText().toString();
         String isbn = txtisbn.getText().toString();
-        String año = txtaño.getText().toString();
         String editodial = txteditorial.getText().toString();
 
-        if(!codigo.isEmpty() && !descripcion.isEmpty() && !precio.isEmpty()){
+        if(!titulo.isEmpty() && !isbn.isEmpty()&& !editodial.isEmpty()){
             ContentValues registro = new ContentValues();
 
             // Guardamos en la base de datos los valores que el usuario ha escrito
             registro.put("editodial", editodial);
             registro.put("titulo", titulo);
-            registro.put("año", año);
             registro.put("isbn", isbn);
 
             // Los insertamos dentro de la tabla "articulos" que hemos creado
@@ -53,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
             //Limpiamos los campos
             txteditorial.setText("");
-            txtaño.setText("");
             txtisbn.setText("");
             txtitulo.setText("");
 
@@ -70,16 +66,16 @@ public class MainActivity extends AppCompatActivity {
         // Abrimos la base de datos en modo lectura y escritura
         SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
 
-        String codigo = et_codigo.getText().toString();
+        String titulo = txtitulo.getText().toString();
 
-        if(!codigo.isEmpty()){
+        if(!titulo.isEmpty()){
             //Seleccionamos los registros con el código
-            Cursor fila = BaseDeDatos.rawQuery("select descripcion, precio from articulos where codigo =" + codigo, null);
+            Cursor fila = BaseDeDatos.rawQuery("select descripcion, precio from articulos where codigo =" + titulo, null);
 
             // Revisamos si la consulta contiene valores
             if(fila.moveToFirst()){
-                et_descripcion.setText(fila.getString(0)); //Se pone el cero por que es el primer valor que vamos a mostrar
-                et_precio.setText(fila.getString(1));
+                txtitulo.setText(fila.getString(0)); //Se pone el cero por que es el primer valor que vamos a mostrar
+                txtisbn.setText(fila.getString(1));
                 BaseDeDatos.close();
             }else{
                 Toast.makeText(this, "El artículo no existe", Toast.LENGTH_SHORT).show();
@@ -96,14 +92,13 @@ public class MainActivity extends AppCompatActivity {
         AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this,"administracion", null, 1);
         SQLiteDatabase BaseDeDatos = admin.getWritableDatabase();
 
-        String codigo = et_codigo.getText().toString();
+        String titulo = txtitulo.getText().toString();
 
-        if(!codigo.isEmpty()){
-            int cantidad = BaseDeDatos.delete("articulos", "codigo=" + codigo, null);
+        if(!titulo.isEmpty()){
+            int cantidad = BaseDeDatos.delete("articulos", "codigo=" + titulo, null);
             BaseDeDatos.close();
 
             txtitulo.setText("");
-            txtaño.setText("");
             txteditorial.setText("");
             txtisbn.setText("");
 
@@ -124,18 +119,16 @@ public class MainActivity extends AppCompatActivity {
 
         String titulo = txtitulo.getText().toString();
         String editorial = txteditorial.getText().toString();
-        String año = txtaño.getText().toString();
         String isbn = txtisbn.getText().toString();
 
-        if(!titulo.isEmpty() && !isbn.isEmpty() && !año.isEmpty() && !editorial.isEmpty()){
+        if(!titulo.isEmpty() && !isbn.isEmpty() && !editorial.isEmpty()){
 
             ContentValues registro = new ContentValues();
             registro.put("titulo", titulo);
             registro.put("isbn", isbn);
-            registro.put("año", año);
             registro.put("editorial", editorial);
 
-            int cantidad = BaseDeDatos.update("articulos", registro, "codigo=" + codigo, null);
+            int cantidad = BaseDeDatos.update("articulos", registro, "codigo=" + titulo, null);
             BaseDeDatos.close();
 
             if(cantidad == 1){
@@ -152,7 +145,6 @@ public class MainActivity extends AppCompatActivity {
     // Método para limpiar la pantalla de datos
     public void Limpiar(View view){
         txtisbn.setText("");
-        txtaño.setText("");
         txtitulo.setText("");
         txteditorial.setText("");
     }

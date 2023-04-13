@@ -1,4 +1,4 @@
- package com.example.basededatos2023juanka.;
+ package com.example.basededatos2023juanka;
         import android.content.Context;
         import android.database.sqlite.SQLiteDatabase;
         import android.database.sqlite.SQLiteOpenHelper;
@@ -18,4 +18,6 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
         {
-}
+
+        }}
+        }
